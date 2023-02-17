@@ -58,7 +58,7 @@ function Board() {
     if (!w && !squares.filter((square) => !square).length) {
       setWinner("BOTH");
     }
-  });
+  }, [squares]);
 
   return (
     <div>
